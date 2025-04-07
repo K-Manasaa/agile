@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Welcome Screen -->
+    <div class="welcome-screen">
+        <h1>🐍 WELCOME TO SNAKE GAME! 🕹️</h1>
+        <p>Help the cute snake grow by eating food!</p>
+        <button id="playButton">Play</button>
+    </div>
+
+    <!-- Game Container -->
+    <div class="game-container" style="display: none;">
+        <canvas id="gameCanvas"></canvas>
+        <!-- Score and Try Again Container -->
+        <!-- Score Display -->
+        <div class="score-tryagain-container">
+            <p>Score: <span id="score">0</span></p>
+            <button id="tryAgain" style="display: none;">Try Again</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

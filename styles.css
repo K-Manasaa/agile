@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Press Start 2P', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000;
+}
+
+/* Welcome Screen */
+.welcome-screen {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background: url('https://source.unsplash.com/1600x900/?cute,snake') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+h1 {
+    font-size: 2.5em;
+    background: linear-gradient(90deg, #ffcc00, #ff66cc);
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: glow 1.5s infinite alternate;
+}
+
+p {
+    font-size: 1.2em;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+#playButton {
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    background: #28a745;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+#playButton:hover {
+    background: #ffcc00;
+    transform: scale(1.1);
+}
+
+/* Game Styling */
+.game-container {
+    text-align: center;
+}
+
+canvas {
+    background-color: black;
+    border: 3px solid white;
+}
+
+/* Score and Try Again Container - Centered Below Game */
+.score-tryagain-container {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+#score {
+    font-weight: bold;
+    color: white; /* Score in yellow for visibility */
+}
+
+#tryAgain {
+    padding: 12px 25px;
+    font-size: 18px;
+    cursor: pointer;
+    background: red;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    display: block;
+    margin: 15px auto;  /* Centers the button */
+    transition: 0.3s;
+}
+
+#tryAgain:hover {
+    background: darkred;
+    transform: scale(1.1);
+}
+
+/* Center Score and Try Again Button */
+.score-tryagain-container {
+    text-align: center;
+    margin-top: 10px;
+}
+
+#tryAgain {
+    padding: 12px 25px;
+    font-size: 18px;
+    cursor: pointer;
+    background: red;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    display: block;
+    margin: 15px auto;  /* Centers the button */
+    transition: 0.3s;
+}
+
+#tryAgain:hover {
+    background: darkred;
+    transform: scale(1.1);
+}
+
+.score-container {
+    color: white;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+#tryAgain {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background: red;
+    color: white;
+    border: none;
+    margin-top: 10px;
+}
+
+#tryAgain:hover {
+    background: darkred;
+}
+
+/* Animation */
+@keyframes glow {
+    0% { text-shadow: 0px 0px 10px #ffcc00; }
+    100% { text-shadow: 0px 0px 20px #ff66cc; }
+}
